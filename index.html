@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+<div id="container">
+    <h1>Number Guessing Game</h1>
+    <div id="calculator">
+
+
+      <form>
+            <p>The Maximum number?
+              <p>
+                <select id="maxNumber">
+                  <option selected value="100">0 - 100</option>
+                  <option value="200">0 - 200</option>
+                  <option value="300">0 - 300</option>
+                </select>
+              <button type="button" id="start">Start</button>
+              <button type="button" id="reset">Reset</button>
+        <p>What is the number you guess?<p>
+                <input id="number-you-guess" type="number" placeholder="The number you guess">
+
+      </form>
+      <p></p>
+      <button type="button" id="guess">Guess!</button>
+
+    </div>
+    <!-- input end-->
+    <div id="result">
+      <span id="tip"></span>
+      <span id="tryCount"></span>
+    </div>
+
+  </div>
+
+  <script  src="js/script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="js/script.js"></script>
+
+  <!--background audio-->
+  <audio id="background-audio" src="sounds/Expectancy.mp3" type="audio/mpeg" loop="loop"></audio>
+  <!--hover effect-->
+  <audio id="hover-audio" src="sounds/hover.wav"></audio>
+  <!-- Click audio -->
+  <audio id="click-audio" src="sounds/click-audio.mp3"></audio>
+  <!-- win audio-->
+  <audio id="win" src="sounds/felicidades.wav"></audio>
+  <!-- partial -->
+
+
+</body>
+</html>
